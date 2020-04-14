@@ -55,8 +55,8 @@ stages:
             inputs:
               action: deploy
               manifests: |
-                $(Pipeline.Workspace)/nodejs-docker-helloworld/manifests/deployment.yml
-                $(Pipeline.Workspace)/nodejs-docker-helloworld/manifests/service.yml
+                $(Pipeline.Workspace)/CurrentRepo/manifests/deployment.yml
+                $(Pipeline.Workspace)/CurrentRepo/manifests/service.yml
               imagePullSecrets: |
                 $(imagePullSecret)
               containers: |
